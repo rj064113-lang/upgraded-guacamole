@@ -1,2 +1,2 @@
 # upgraded-guacamole
-Photo studio portifolio
+Photo studio portifolio, graphic design, printing and branding
