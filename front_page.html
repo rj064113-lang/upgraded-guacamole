@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #020617; color: white; }
+        .bento-card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 1.5rem; transition: all 0.3s ease; }
+        .bento-card:hover { border-color: #6366f1; transform: translateY(-5px); box-shadow: 0 0 20px rgba(99, 102, 241, 0.2); }
+    </style>
+</head>
+<body class="p-4 md:p-10 font-sans">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        
+        <div class="md:col-span-3 bento-card p-8 flex flex-col justify-center">
+            <h1 class="text-5xl font-bold mb-2">Hello, I'm <span class="text-indigo-500">Your Name</span></h1>
+            <p class="text-xl text-slate-400">Full Stack Developer & AI Enthusiast building the future of the web.</p>
+            <div class="mt-6 flex gap-4">
+                <button class="bg-indigo-600 hover:bg-indigo-700 px-6 py-2 rounded-full font-bold">Download CV</button>
+                <button class="border border-slate-600 hover:bg-slate-800 px-6 py-2 rounded-full font-bold">Contact Me</button>
+            </div>
+        </div>
+
+        <div class="bento-card p-6 flex items-center justify-center bg-indigo-900/20">
+            <div class="text-center">
+                <div class="w-24 h-24 bg-slate-700 rounded-full mx-auto mb-4"></div>
+                <p class="font-bold">Based in NYC</p>
+                <p class="text-sm text-slate-400">Available for hire</p>
+            </div>
+        </div>
+
+        <div class="md:col-span-2 bento-card p-6">
+            <h2 class="text-2xl font-bold mb-4">Featured Project</h2>
+            <div class="bg-slate-800 h-48 rounded-xl mb-4 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+            </div>
+            <h3 class="font-bold">AI Analytics Dashboard</h3>
+            <p class="text-sm text-slate-400">A real-time data visualization tool built with React and Tailwind.</p>
+        </div>
+
+        <div class="bento-card p-6">
+            <h2 class="text-xl font-bold mb-4">Stack</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-slate-800 px-3 py-1 rounded text-xs font-mono">React</span>
+                <span class="bg-slate-800 px-3 py-1 rounded text-xs font-mono">Node.js</span>
+                <span class="bg-slate-800 px-3 py-1 rounded text-xs font-mono">Python</span>
+                <span class="bg-slate-800 px-3 py-1 rounded text-xs font-mono">Tailwind</span>
+                <span class="bg-slate-800 px-3 py-1 rounded text-xs font-mono">GitHub</span>
+            </div>
+        </div>
+
+        <div class="bento-card p-6 flex flex-col justify-between">
+            <h2 class="font-bold">Let's Connect</h2>
+            <div class="space-y-2">
+                <a href="#" class="block text-indigo-400 hover:underline">LinkedIn ↗</a>
+                <a href="#" class="block text-indigo-400 hover:underline">Twitter ↗</a>
+                <a href="#" class="block text-indigo-400 hover:underline">GitHub ↗</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
